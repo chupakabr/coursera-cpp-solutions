@@ -7,12 +7,15 @@
 //
 
 #include <iostream>
+#include "week01_task1.h"
 
 int main(int argc, const char * argv[])
 {
+    std::cout << "Coursera solutions." << std::endl;
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    week01_task1 app;
+    app.run();
 
+    std::cout << "Done." << std::endl;
     return 0;
 }

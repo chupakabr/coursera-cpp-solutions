@@ -1,3 +1,5 @@
+WEEK 1
+
 /*  Convert this program to C++
 *   change to C++ io
 *   change to one line comments
