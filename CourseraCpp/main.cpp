@@ -7,13 +7,13 @@
 //
 
 #include <iostream>
-#include "week01_task1.h"
+#include "week02_task1.h"
 
 int main(int argc, const char * argv[])
 {
     std::cout << "Coursera solutions." << std::endl;
 
-    week01_task1 app;
+    week02_task1 app;
     app.run();
 
     std::cout << "Done." << std::endl;

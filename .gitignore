@@ -1,3 +1,6 @@
+.idea/
+CourseraCpp.xcodeproj/
+
 # Compiled Object files
 *.slo
 *.lo
