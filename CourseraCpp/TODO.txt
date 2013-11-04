@@ -64,8 +64,8 @@ algorithms and will allow participants to program in a more advanced and richer 
 Reference Abstractions:
 Implementing Dijkstra’s algorithm requires thinking about at least three basic abstractions:
   Graph (G = (V, E), PriorityQueue, and ShortestPath algorithm.
-Additionally, deciding on a scheme for naming vertices (V) is an important first step in implementation design.
-By convention, vertices are generally mapped onto the set of Integers in the range from 0 : |V| -1.
+Additionally, deciding on a scheme for naming vertices_ (V) is an important first step in implementation design.
+By convention, vertices_ are generally mapped onto the set of Integers in the range from 0 : |V| -1.
 This provides an effective Key into sequential containers (like ARRAY) to access vertex records in constant
 time - Θ(1). Also, in models where vertex names are not represented with integers, the use of a symbol table
 could be used to provide a 1-to-1 mapping to associate V arbitrary names with V integers in the proper range.
@@ -73,7 +73,7 @@ could be used to provide a 1-to-1 mapping to associate V arbitrary names with V 
 A potential partial interface definition for a Graph could be:
 
 Class Graph:
-V (G): returns the number of vertices in the graph
+V (G): returns the number of vertices_ in the graph
 E (G): returns the number of edges in the graph
 adjacent (G, x, y): tests whether there is an edge from node x to node y.
 neighbors (G, x): lists all nodes y such that there is an edge from x to y.
@@ -107,8 +107,8 @@ fields (has a relationship) of Graph and Priority Queue, an additional ADT maybe
 relationship of the shortest path.
 
 Class ShortestPath
-vertices(List): list of vertices in G(V,E).
-path(u, w): find shortest path between u-w and returns the sequence of vertices representing shorest path u-v1-v2-…-vn-w.
+vertices_(List): list of vertices_ in G(V,E).
+path(u, w): find shortest path between u-w and returns the sequence of vertices_ representing shorest path u-v1-v2-…-vn-w.
 path_size(u, w): return the path cost associated with the shortest path.
 The class implementing your Monte Carlo simulation is the workflow manager for this assignment, butother helper classes may be necessary depending on your particular implementation
 
