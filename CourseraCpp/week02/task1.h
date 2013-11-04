@@ -8,11 +8,13 @@
 #ifndef __week02_task1_H_
 #define __week02_task1_H_
 
+namespace week02 {
 
-class week02_task1 {
-
+class task1 {
 public:
+    // Simulation: Run few tests on randomly generated graphs
     void run();
+};
 
 };
 
