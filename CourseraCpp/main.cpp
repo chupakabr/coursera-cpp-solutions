@@ -7,16 +7,16 @@
 //
 
 #include <iostream>
-#include "week02/task1.h"
+#include "week03/task1.h"
 
-using namespace week02;
+using namespace week03;
 
 int main(int argc, const char * argv[])
 {
     std::cout << "Coursera solutions." << std::endl;
 
     task1 app;
-    app.run();
+    app.run(argc, argv);
 
     std::cout << "Done." << std::endl;
     return 0;
