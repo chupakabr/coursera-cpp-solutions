@@ -18,15 +18,17 @@ namespace week04 {
 enum board_state {
     EMPTY, RED, BLUE
 };
+ostream& operator<<(ostream& out, const board_state& state);
 
 class board {
 
 private:
     vector<vector<board_state> > matrix_;
 
-    friend std::ostream& operator<<(std::ostream &out, const board &g);
+    friend ostream& operator<<(ostream &out, const board &g);
 
 public:
+
     // Initialize board of specified size
     board(int size) {
         matrix_.resize(size);
@@ -52,8 +54,7 @@ public:
     }
 
 }; // class board
-}; // namespace week04
 
-ostream& operator<<(ostream &out, const week04::board &g);
+}; // namespace week04
 
 #endif //__board_H_
